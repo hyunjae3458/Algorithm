@@ -1,0 +1,4 @@
+select count(F.ID) as FISH_COUNT
+from FISH_INFO as F
+join FISH_NAME_INFO as N on F.FISH_TYPE = N.FISH_TYPE
+where N.FISH_NAME = "BASS" or N.FISH_NAME = "SNAPPER";
